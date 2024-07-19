@@ -35,7 +35,7 @@ await fetchData();
 
 let validWords = [];
 function fetchAndLogTextFile() {
-  fetch('https://bencantrell3.github.io/WordleWebApp/allWords.txt')
+  fetch('/allWords.txt')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL WORDS ${response.status}`);
@@ -54,7 +54,7 @@ function fetchAndLogTextFile() {
 }
 let allAnswers = [];
 function fetchAndLogTextFile2() {
-  fetch('https://bencantrell3.github.io/WordleWebApp/allAnswers.txt')
+  fetch('/allAnswers.txt')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL ANSWERS ${response.status}`);

@@ -35,7 +35,7 @@ await fetchData();
 
 let validWords = [];
 function fetchAndLogTextFile() {
-  fetch('https://corsproxy.io/?https://bencantrell3.github.io/wordleplusplus/allWords.txt/?' + new Date().getTime() + '')
+  fetch('https://corsproxy.io/?https://bencantrell3.github.io/wordleplusplus/allWords.txt/')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL WORDS ${response.status}`);
@@ -54,7 +54,7 @@ function fetchAndLogTextFile() {
 }
 let allAnswers = [];
 function fetchAndLogTextFile2() {
-  fetch('https://corsproxy.io/?https://bencantrell3.github.io/wordleplusplus/allAnswers.txt/?' + new Date().getTime() + '')
+  fetch('https://corsproxy.io/?https://bencantrell3.github.io/wordleplusplus/allAnswers.txt/')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL ANSWERS ${response.status}`);

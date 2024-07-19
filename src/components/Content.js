@@ -35,7 +35,7 @@ await fetchData();
 
 let validWords = [];
 function fetchAndLogTextFile() {
-  fetch('https://wordleplusplus.com/allWords.txt/')
+  fetch('https://wordleplusplus.com/allWords.txt')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL WORDS ${response.status}`);
@@ -54,7 +54,7 @@ function fetchAndLogTextFile() {
 }
 let allAnswers = [];
 function fetchAndLogTextFile2() {
-  fetch('https://wordleplusplus.com/allAnswers.txt/')
+  fetch('https://wordleplusplus.com/allAnswers.txt')
     .then(response => {
       if (!response.ok) {
         throw new Error(`ERROR FETCHING ALL ANSWERS ${response.status}`);
